@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="645957f0-0cdd-4edf-b192-3d4e6b668970" name="Default Changelist" comment="" />
+    <list default="true" id="645957f0-0cdd-4edf-b192-3d4e6b668970" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GazpromTelegram/ocean/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GazpromTelegram/ocean/Bot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ocean/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ocean/Bot.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,29 +19,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ocean/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+            <state relative-caret-position="267">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
-                <element signature="method#main#0;class#Bot#0" />
-                <element signature="e#1100#1201#0" />
-                <element signature="e#1240#1284#0" />
                 <element signature="method#sendMsg#0;class#Bot#0" />
-                <element signature="e#1567#1612#0" />
-                <element signature="e#1644#1688#0" />
+                <element signature="e#1763#1808#0" />
+                <element signature="e#1840#1884#0" />
                 <element signature="method#setButtons#0;class#Bot#0" />
                 <element signature="method#onUpdateReceived#0;class#Bot#0" />
-                <element signature="e#3123#3161#1" />
-                <element signature="e#3550#3586#1" />
-                <element signature="e#3389#3633#1" />
-                <element signature="e#3407#3443#0" />
-                <element signature="e#3656#3698#0" />
-                <marker date="1556417317530" expanded="false" signature="1504:1541" ph="..." />
+                <element signature="e#3389#3663#1" />
+                <element signature="e#3699#3821#1" />
+                <element signature="e#3856#4481#1" />
+                <element signature="e#3874#4341#0" />
+                <element signature="e#3920#4036#1" />
+                <element signature="e#4374#4451#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,6 +56,9 @@
     <option name="y" value="20" />
     <option name="width" value="1755" />
     <option name="height" value="985" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -138,12 +146,16 @@
       <updated>1556407615693</updated>
       <workItem from="1556407629812" duration="232000" />
       <workItem from="1556408514548" duration="4325000" />
-      <workItem from="1556414616735" duration="2688000" />
+      <workItem from="1556414616735" duration="3235000" />
+      <workItem from="1556429373247" duration="269000" />
+      <workItem from="1556429923405" duration="1228000" />
+      <workItem from="1556432384709" duration="1624000" />
+      <workItem from="1556451006643" duration="231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7245000" />
+    <option name="totallyTimeSpent" value="11144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -155,11 +167,11 @@
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49858356" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49858356" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.388102" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -170,7 +182,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -229,25 +241,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/jars/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/bots/DefaultAbsSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="693" selection-start-line="693" selection-end-line="693" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jars/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/meta/generics/LongPollingBot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jars/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/meta/generics/BotSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jars/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/meta/bots/AbsSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jars/telegrambots-4.1-jar-with-dependencies.jar!/org/telegram/telegrambots/updatesreceivers/DefaultBotSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ocean/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+        <state relative-caret-position="267">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
           <folding>
-            <element signature="method#main#0;class#Bot#0" />
-            <element signature="e#1100#1201#0" />
-            <element signature="e#1240#1284#0" />
             <element signature="method#sendMsg#0;class#Bot#0" />
-            <element signature="e#1567#1612#0" />
-            <element signature="e#1644#1688#0" />
+            <element signature="e#1763#1808#0" />
+            <element signature="e#1840#1884#0" />
             <element signature="method#setButtons#0;class#Bot#0" />
             <element signature="method#onUpdateReceived#0;class#Bot#0" />
-            <element signature="e#3123#3161#1" />
-            <element signature="e#3550#3586#1" />
-            <element signature="e#3389#3633#1" />
-            <element signature="e#3407#3443#0" />
-            <element signature="e#3656#3698#0" />
-            <marker date="1556417317530" expanded="false" signature="1504:1541" ph="..." />
+            <element signature="e#3389#3663#1" />
+            <element signature="e#3699#3821#1" />
+            <element signature="e#3856#4481#1" />
+            <element signature="e#3874#4341#0" />
+            <element signature="e#3920#4036#1" />
+            <element signature="e#4374#4451#0" />
           </folding>
         </state>
       </provider>

@@ -11,14 +11,18 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
+import org.telegram.telegrambots.meta.generics.BotSession;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Bot extends TelegramLongPollingBot {
 
+    Set<String> voted = new HashSet<>();
 
     public static void main(String[] args) {
         ApiContextInitializer.init();
@@ -78,7 +82,7 @@ public class Bot extends TelegramLongPollingBot {
         String text = update.getMessage().getText();
         System.out.printf("Got message: %s\n", text);
         String chatId = update.getMessage().getChatId().toString();
-        if (text.matches("/start \\d")) {
+        if (text.matches("/start \\d+")) {
             int id = Integer.parseInt(text.split("/start ")[1]);
             String name = "Ocean"; // TODO: Get name from Egor.
             sendMsg(chatId, String.format("Оцените презентацию команды \"%s\" по шкале от 1 до 10", name), true);
@@ -88,13 +92,19 @@ public class Bot extends TelegramLongPollingBot {
             sendMsg(chatId, "Пожалуйста, воспользуйтесь предоставленной ссылкой!", false);
             return;
         }
-        if (text.matches("\\d")) {
+        if (text.matches("\\d+")) {
             try {
+                if (voted.contains(chatId)) {
+                    sendMsg(chatId, "Вы уже проголосовали!", false);
+                    return;
+                }
+
                 int mark = Integer.parseInt(text);
                 if (mark < 0)
                     throw new NumberFormatException();
                 // TODO: Send request to Egor.
                 sendMsg(chatId, "Спасибо за участие в оценке!", false);
+                voted.add(chatId);
             } catch (NumberFormatException e) {
                 sendMsg(chatId, "Недопустимое число!", true);
             }
