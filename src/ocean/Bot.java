@@ -1,6 +1,7 @@
 package ocean;
 
 import org.glassfish.jersey.message.internal.TracingLogger;
+import org.json.HTTP;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
@@ -13,6 +14,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 import org.telegram.telegrambots.meta.generics.BotSession;
 
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.Socket;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -77,6 +84,18 @@ public class Bot extends TelegramLongPollingBot {
         replyKeyboardMarkup.setKeyboard(keyboard);
     }
 
+    private void sendMessageToServer(int mark) {
+        try {
+            URL url = new URL("http://10.20.2.219:8000/actum/poll/" + mark);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.getInputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
     @Override
     public void onUpdateReceived(Update update) {
         String text = update.getMessage().getText();
@@ -100,18 +119,19 @@ public class Bot extends TelegramLongPollingBot {
                 }
 
                 int mark = Integer.parseInt(text);
-                if (mark < 0)
-                    throw new NumberFormatException();
-                // TODO: Send request to Egor.
+                if (mark < 0 || mark > 10)
+                    throw new NumberFormatException("Недопустимое число!");
+                if (mark <= 6)
+                    throw new Exception("Маловато будет(");
+                sendMessageToServer(mark);
                 sendMsg(chatId, "Спасибо за участие в оценке!", false);
                 voted.add(chatId);
-            } catch (NumberFormatException e) {
-                sendMsg(chatId, "Недопустимое число!", true);
+            } catch (Exception e) {
+                sendMsg(chatId, e.getMessage(), true);
             }
             return;
         }
     }
-
 
     @Override
     public String getBotUsername() {
